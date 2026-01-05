@@ -1,0 +1,376 @@
+.concept-study {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: #f5f5f5;
+}
+
+.study-header {
+  background-color: white;
+  padding: 20px 30px;
+  border-bottom: 1px solid #e0e0e0;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.study-header h2 {
+  font-size: 1.8rem;
+  color: #333;
+  flex: 1;
+  margin: 0;
+}
+
+.back-button {
+  padding: 8px 16px;
+  background-color: #f0f0f0;
+  color: #333;
+  border: none;
+  border-radius: 4px;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.back-button:hover {
+  background-color: #e0e0e0;
+}
+
+.complete-button {
+  padding: 8px 16px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.complete-button:hover {
+  background-color: #45a049;
+}
+
+.completed-badge {
+  padding: 8px 16px;
+  background-color: #e8f5e9;
+  color: #4caf50;
+  border-radius: 4px;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.study-layout {
+  display: flex;
+  flex: 1;
+  overflow: hidden;
+}
+
+.tab-navigation {
+  width: 200px;
+  background-color: white;
+  border-right: 1px solid #e0e0e0;
+  padding: 20px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.tab-button {
+  padding: 12px 20px;
+  background: none;
+  border: none;
+  text-align: left;
+  font-size: 0.95rem;
+  color: #666;
+  cursor: pointer;
+  transition: all 0.2s;
+  border-left: 3px solid transparent;
+}
+
+.tab-button:hover {
+  background-color: #f5f5f5;
+  color: #333;
+}
+
+.tab-button.active {
+  background-color: #e3e8f7;
+  color: #667eea;
+  border-left-color: #667eea;
+  font-weight: 500;
+}
+
+.study-content {
+  flex: 1;
+  padding: 30px;
+  overflow-y: auto;
+  background-color: white;
+}
+
+.tab-content {
+  max-width: 900px;
+}
+
+.tab-content h3 {
+  font-size: 1.6rem;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.content-section {
+  line-height: 1.8;
+}
+
+.understanding-text {
+  font-size: 1.05rem;
+  color: #555;
+  line-height: 1.8;
+}
+
+/* Diagram Section */
+.diagram-description,
+.diagram-labels {
+  margin-bottom: 25px;
+}
+
+.diagram-description h4,
+.diagram-labels h4 {
+  font-size: 1.2rem;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.diagram-labels ul {
+  list-style-type: disc;
+  margin-left: 20px;
+}
+
+.diagram-labels li {
+  margin-bottom: 8px;
+  color: #555;
+}
+
+/* Exam Answers Section */
+.answer-format-buttons {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 25px;
+  flex-wrap: wrap;
+}
+
+.format-button {
+  padding: 10px 20px;
+  background-color: #f0f0f0;
+  color: #333;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 0.95rem;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.format-button:hover {
+  background-color: #e0e0e0;
+}
+
+.format-button.active {
+  background-color: #667eea;
+  color: white;
+  border-color: #667eea;
+}
+
+.answer-display {
+  background-color: #fafafa;
+  border: 1px solid #e0e0e0;
+  border-radius: 4px;
+  padding: 25px;
+  margin-top: 20px;
+}
+
+.answer-display h4 {
+  font-size: 1.3rem;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.answer-content {
+  font-family: 'Georgia', serif;
+  line-height: 1.8;
+}
+
+.answer-heading {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #333;
+  margin: 15px 0 10px 0;
+}
+
+.answer-text {
+  font-size: 1rem;
+  color: #555;
+  margin: 8px 0;
+  text-align: justify;
+}
+
+.answer-bullet {
+  font-size: 1rem;
+  color: #555;
+  margin: 5px 0;
+  margin-left: 20px;
+}
+
+/* Numericals Section */
+.numerical-framework,
+.common-mistakes {
+  margin-bottom: 30px;
+}
+
+.numerical-framework h4,
+.common-mistakes h4 {
+  font-size: 1.2rem;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.framework-content {
+  background-color: #f9f9f9;
+  border-left: 4px solid #667eea;
+  padding: 15px 20px;
+  border-radius: 4px;
+}
+
+.framework-line {
+  margin: 5px 0;
+  color: #555;
+  font-family: 'Courier New', monospace;
+  font-size: 0.95rem;
+}
+
+.common-mistakes ul {
+  list-style-type: disc;
+  margin-left: 20px;
+}
+
+.common-mistakes li {
+  margin-bottom: 10px;
+  color: #d32f2f;
+}
+
+/* Examiner Alignment Section */
+.alignment-section {
+  margin-bottom: 30px;
+}
+
+.alignment-section h4 {
+  font-size: 1.2rem;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.keywords-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.keyword-tag {
+  padding: 6px 12px;
+  background-color: #e3e8f7;
+  color: #667eea;
+  border-radius: 4px;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.notation-text {
+  background-color: #f9f9f9;
+  border-left: 4px solid #667eea;
+  padding: 15px 20px;
+  border-radius: 4px;
+  font-family: 'Courier New', monospace;
+  color: #555;
+  line-height: 1.6;
+}
+
+.risky-phrase {
+  color: #d32f2f;
+  margin-bottom: 8px;
+}
+
+/* Revision Notes Section */
+.revision-section {
+  margin-bottom: 30px;
+}
+
+.revision-section h4 {
+  font-size: 1.2rem;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.revision-section ul {
+  list-style-type: disc;
+  margin-left: 20px;
+}
+
+.revision-section li {
+  margin-bottom: 10px;
+  color: #555;
+  line-height: 1.6;
+}
+
+.formulas-list {
+  background-color: #f9f9f9;
+  border-left: 4px solid #667eea;
+  padding: 15px 20px;
+  border-radius: 4px;
+}
+
+.formula-item {
+  font-family: 'Courier New', monospace;
+  font-size: 1rem;
+  color: #333;
+  margin-bottom: 8px;
+}
+
+.no-content {
+  color: #999;
+  font-style: italic;
+  text-align: center;
+  padding: 40px;
+}
+
+.error-message {
+  padding: 40px;
+  text-align: center;
+  color: #d32f2f;
+}
+
+@media (max-width: 768px) {
+  .study-layout {
+    flex-direction: column;
+  }
+
+  .tab-navigation {
+    width: 100%;
+    flex-direction: row;
+    overflow-x: auto;
+    padding: 10px;
+  }
+
+  .tab-button {
+    white-space: nowrap;
+    border-left: none;
+    border-bottom: 3px solid transparent;
+  }
+
+  .tab-button.active {
+    border-left: none;
+    border-bottom-color: #667eea;
+  }
+}
+
